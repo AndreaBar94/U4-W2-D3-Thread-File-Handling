@@ -14,7 +14,7 @@ public class RegistroPresenze {
 			saveOnDisk("Mario Rossi@5");
 			saveOnDisk("Giorgio Bianchi@7");
 			saveOnDisk("Gianni Verdi@7");
-			System.out.println("FILE SCRITTO");
+			System.out.println("REGISTRO PRESENZE");
 			System.out.println("Ecco il contenuto:");
 			System.out.println(readFileFromDisk());
 		} catch (IOException e) {
