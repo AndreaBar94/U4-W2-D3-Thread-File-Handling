@@ -10,16 +10,16 @@ public class DoubleThread extends Thread {
 		this.symbol = symbol;
 	}
 	
+	
 	@Override
-	public void run() { // Questo è il task eseguito dal Thread
-		for (int i = 0; i < 10; i++) {
-			Main1.logger.info(symbol);
-//			System.out.println(symbol);
+	public void run() {
+		for (int i = 0; i <= 10; i++) {
+			Main1.logger.info(symbol + i);
 			
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+
 				Main1.logger.error(getName());
 			}
 		}
